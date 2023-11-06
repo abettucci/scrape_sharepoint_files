@@ -15,17 +15,11 @@ import datetime
 # SHAREPOINT_SITE_NAME = env('sharepoint_site_name')
 # SHAREPOINT_DOC = env('sharepoint_doc_library')
 
-USERNAME = "AgustinIgnacio.Bettucci@mdlz.com"
-PASSWORD = "Mdlz.2023"
-SHAREPOINT_SITE = "https://partners.mdlz.com/sites/recsystemar"
-SHAREPOINT_SITE_NAME = "recsystemar"
-SHAREPOINT_DOC = "BAJADAS/VentasPDVs/"
-
-# USERNAME = os.environ.get('sharepoint_email')
-# PASSWORD = os.environ.get('sharepoint_password')
-# SHAREPOINT_SITE = os.environ.get('sharepoint_url_site')
-# SHAREPOINT_SITE_NAME = os.environ.get('sharepoint_site_name')
-# SHAREPOINT_DOC = os.environ.get('sharepoint_doc_library')
+USERNAME = os.environ.get('sharepoint_email')
+PASSWORD = os.environ.get('sharepoint_password')
+SHAREPOINT_SITE = os.environ.get('sharepoint_url_site')
+SHAREPOINT_SITE_NAME = os.environ.get('sharepoint_site_name')
+SHAREPOINT_DOC = os.environ.get('sharepoint_doc_library')
 
 class SharePoint:
     def _auth(self):
